@@ -1,17 +1,20 @@
 import React from 'react';
-  
+import Sidebar from './components/sidebar';
 
-const Index = () => {
+const IndexPage = () => {
   return (
-    <div className='grid grid-cols-12 gap-1'>
-      <div className='min-h-screen col-span-3 bg-white '>
-        <h1>Sidebar</h1>
-      </div>
-      <div className='col-span-9 bg-white'>
-        <h1>body</h1> 
-      </div>
+    <div className="flex flex-row h-screen bg-gray-200">
+      <Sidebar />
+      <main className="flex-1 p-4">
+        <h1 className="mb-4 text-4xl font-bold">Welcome to my website!</h1>
+        <p className="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod lectus ut
+          justo lobortis, ut commodo nunc vehicula. Donec convallis enim non neque commodo,
+          vel pharetra velit tempus. Donec dictum semper augue in porta.
+        </p>
+      </main>
     </div>
   );
-}
+};
 
-export default Index
+export default IndexPage;

@@ -4,7 +4,7 @@ import Main from './components/main';
 
 const Index = () => {
   return (
-    <div className="grid h-screen grid-cols-12 bg-gray-200">
+    <div className="w-full min-h-screen bg-fixed bg-center bg-no-repeat bg-cover bg-homeBg dark:bg-homeTwoBg-dark md:pb-16">
       <div className="flex items-center justify-center col-span-3">
         <Sidebar />
       </div>

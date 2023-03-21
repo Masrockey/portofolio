@@ -2,6 +2,10 @@ import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import '../styles/globals.css';
+import '../styles/custom.css';
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

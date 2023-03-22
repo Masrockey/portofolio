@@ -20,3 +20,6 @@ body {
     opacity: 1;
   }
 }
+html {
+ font-body : antialiased;
+}
